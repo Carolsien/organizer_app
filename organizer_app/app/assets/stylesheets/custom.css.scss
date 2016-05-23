@@ -5,6 +5,13 @@
 
 body {
   padding-top: 60px;
+  font-family: verdana,tahoma;
+  color: #3300cc;
+  background: image-url('tloin.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center center;
+
 }
 
 section {
@@ -56,7 +63,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: #000066;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -66,6 +73,20 @@ p {
 #logo:hover {
   color: #fff;
   text-decoration: none;
+}
+
+.navbar-inverse {
+    background-color: lightgrey;
+    border-color: #090909;
+    border-top-color: rgb(9, 9, 9);
+    border-right-color: rgb(9, 9, 9);
+    border-bottom-color: rgb(9, 9, 9);
+    border-left-color: rgb(9, 9, 9);
+	}
+	
+.navbar-inverse 
+.navbar-nav > li > a {
+    color: #00008B;
 }
 
 /* mixins, variables, etc. */
