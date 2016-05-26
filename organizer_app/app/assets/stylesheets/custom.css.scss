@@ -35,6 +35,38 @@ textarea {
 	border-radius: 6px;
 }
 
+/* menu */
+
+#cssmenu > ul > li.active > a {
+    color: #777;
+    background-color: #a6c9e9;
+}
+
+#cssmenu > ul > li:first-child > a {
+    border-radius: 3px 3px 0 0;
+}
+
+#cssmenu > ul > li > a {
+    padding: 12px 15px;
+    color: #6f6d6d;
+    transition: all 0.3s ease-out;
+    font-size: 18px;
+}
+
+#cssmenu ul li a {
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
