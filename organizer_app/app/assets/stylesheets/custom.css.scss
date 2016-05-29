@@ -120,12 +120,37 @@ p {
     border-bottom-color: rgb(9, 9, 9);
     border-left-color: rgb(9, 9, 9);
 	}
-	
-.navbar-inverse 
+
+.navbar-inverse
 .navbar-nav > li > a {
     color: #00008B;
 }
+/* footer */
 
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;

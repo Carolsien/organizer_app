@@ -1,10 +1,4 @@
 class User < ActiveRecord::Base
-  attr_accessor :remember_token,
-                :activation_token,
-                :reset_token
-
-  before_save   :downcase_email
-  before_create :create_activation_digest
 
   before_save { self.email = email.downcase }
   validates :name,  presence: true,
@@ -61,11 +55,6 @@ class User < ActiveRecord::Base
     update_attribute(:activated_at, Time.zone.now)
   end
 
-  # Sends activation email.
-  def send_activation_email
-    UserMailer.account_activation(self).deliver_now
-  end
-
   # Sets the password reset attributes.
   def create_reset_digest
     self.reset_token = User.new_token
@@ -89,9 +78,4 @@ class User < ActiveRecord::Base
     self.email = email.downcase
   end
 
-    # Creates and assigns the activation token and digest.
-  def create_activation_digest
-    self.activation_token  = User.new_token
-    self.activation_digest = User.digest(activation_token)
-  end
 end
