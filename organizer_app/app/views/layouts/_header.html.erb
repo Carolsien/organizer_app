@@ -4,19 +4,9 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Strona domowa", root_path %></li>
+        <li><%= link_to "Pomoc", help_path %></li>
+        <li><%= link_to "About", about_path %></li>
         <% if logged_in? %>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            Zaplanuj <b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu">
-            <li><%= link_to "Goscie", guest_path %></li>
-            <li><%= link_to "Wesele", wedding_path %></li>
-            <li><%= link_to "Slub koscielny", church_path %></li>
-            <li><%= link_to "Panna mloda", bride_path %></li>
-            <li><%= link_to "Pan mlody", groom_path %></li>
-          </ul>
-        </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               Konto <b class="caret"></b>
