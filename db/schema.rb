@@ -11,13 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160613040505) do
+ActiveRecord::Schema.define(version: 20160524004513) do
 
   create_table "guests", force: :cascade do |t|
-    t.string   "imie"
-    t.string   "nazwisko"
-    t.string   "numer"
-    t.string   "osobatow"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
-  resources :guests
-  resources :guests
     root                'static_pages#home'
     get    'help'    => 'static_pages#help'
     get    'about'   => 'static_pages#about'
     get    'contact' => 'static_pages#contact'
-    get    'guest'   => 'guest#index'
+    get    'guest'   => 'static_pages#guest'
     get    'wedding' => 'static_pages#wedding'
     get    'church'  => 'static_pages#church'
     get    'bride'   => 'static_pages#bride'
