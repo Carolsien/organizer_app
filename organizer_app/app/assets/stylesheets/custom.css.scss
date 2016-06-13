@@ -3,8 +3,9 @@
 
 /* universal */
 
-p {margin:0; padding:0 0 0 20px}
-button {width:100px; height:50px;}
+ p {margin:0; padding:0 0 0 20px; font-family: verdana,tahoma;
+  color: #3300cc;}
+  button {width:100px; height:50px;}
 
 .custom {
     width: 200px !important;
@@ -18,6 +19,8 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center center;
+  
+ 
 }
 
 section {
