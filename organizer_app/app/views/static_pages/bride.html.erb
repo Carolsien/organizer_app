@@ -1,0 +1,121 @@
+<% provide(:title, "Panna Młoda") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+  </head>
+  <body>
+    <div class="row">
+
+      <h1>Stroj</h1>
+      <div class="col-4 col-m-4">
+        <ol class="o">
+          <h4>Salon sukni slubnych</h4>
+          <br>
+          <li><label name="dressSalonDetailsName">Nazwa salonu</label>
+            <input type="text" name="dressSalonName"><br>
+          <li><label name="dressSalonDetailsStreet">Ulica</label>
+            <input type="text" name="dressSalonStreet"><br>
+          <li><label name="dressSalonDetailsCity">Miasto </label>
+            <input type="text" name="dresSalonsCity"><br>
+          <li><label name="dressSalonDetailsTelephone">Numer telefonu </label>
+            <input type="number" name="dressSalonTelephone"><br>
+        </ol>
+      </div>
+
+      <div class="col-4 col-m-4">
+        <ol class="o">
+          <h4>Suknia</h4>
+          <br>
+          <li><label name="dressDetailsName">Model sukni</label>
+            <input type="text" name="dressName"><br>
+          <li><label name="dressDetailsSize">Rozmiar</label>
+            <input type="number" name="dressSize"><br>
+          <li><label name="dressDetailsDate">Przymiarki</label>
+            <input type="datetime-local" name="dressMeetingDate">
+            <input type="datetime-local" name="dressMeetingDate">
+            <input type="datetime-local" name="dressMeetingDate">
+        </ol>
+      </div>
+
+      <div class="col-4 col-m-4">
+        <ol class="o">
+          <h4>Dodatki</h4>
+          <br>
+          <input type="checkbox" name="accessories" value="Welon">Welon<br>
+          <input type="checkbox" name="accessories" value="Buty">Buty<br>
+          <input type="checkbox" name="accessories" value="Bizuteria">Bizuteria<br>
+          <input type="checkbox" name="accessories" value="Bielizna">Bielizna<br>
+
+<br><br><br><br><br><br><br><br>
+        </ol>
+      </div>
+
+      <br>
+
+      <h1>Uroda</h1>
+      <div class="col-4 col-m-4">
+        <ol class="o">
+          <h4>Fryzjer</h4>
+          <br>
+          <li><label name="hairdresserDetailsName">Nazwa salonu </label>
+            <input type="text" name="hairdresserName"><br>
+          <li><label name="hairdresserDetailsStreet">Ulica </label>
+            <input type="text" name="hairdresserStreet"><br>
+          <li><label name="hairdresserDetailsCity">Miasto </label>
+            <input type="text" name="hairdresserCity"><br>
+          <li><label name="hairdresserDetailsTelephone">Numer telefonu </label>
+            <input type="number" name="hairdresserTelephone"><br>
+          <li><label name="hairdresserDetailsMeetingDate">Wizyta w dniu slubu</label>
+            <input type="datetime-local" name="hairdresserMeetingDate">
+          <li><label name="hairdresserDetailsDate">Wizyty probne</label>
+            <input type="datetime-local" name="hairdresserMeetingDate">
+            <input type="datetime-local" name="hairdresserMeetingDate">
+            <input type="datetime-local" name="hairdresserMeetingDate">
+        </ol>
+      </div>
+
+      <div class="col-4 col-m-4">
+        <ol class="o">
+          <h4>Kosmetyczka</h4>
+          <br>
+          <li><label name="beauticianDetailsName">Nazwa salonu </label>
+            <input type="text" name="beauticianName"><br>
+          <li><label name="beauticianDetailsStreet">Ulica </label>
+            <input type="text" name="beauticianStreet"><br>
+          <li><label name="beauticianDetailsCity">Miasto </label>
+            <input type="text" name="beauticianCity"><br>
+          <li><label name="beauticianDetailsTelephone">Numer telefonu </label>
+            <input type="number" name="beauticianTelephone"><br>
+          <li><label name="beauticianDetailsMeetingDate">Wizyta w dniu slubu</label>
+            <input type="datetime-local" name="beauticianMeetingDate">
+          <li><label name="beauticianDetailsDate">Wizyty probne</label>
+            <input type="datetime-local" name="beauticianMeetingDate">
+            <input type="datetime-local" name="beauticianMeetingDate">
+            <input type="datetime-local" name="beauticianMeetingDate">
+        </ol>
+      </div>
+
+      <div class="col-4 col-m-4">
+        <ol class="o">
+          <h4>Makijaz</h4>
+          <br>
+          <li><label name="makeupartistDetailsName">Nazwa salonu </label>
+            <input type="text" name="makeupartistName"><br>
+          <li><label name="makeupartistDetailsStreet">Ulica </label>
+            <input type="text" name="makeupartistStreet"><br>
+          <li><label name="makeupartistDetailsCity">Miasto </label>
+            <input type="text" name="makeupartistCity"><br>
+          <li><label name="makeupartistDetailsTelephone">Numer telefonu </label>
+            <input type="number" name="makeupartistTelephone"><br>
+          <li><label name="makeupartistDetailsMeetingDate">Wizyta w dniu slubu</label>
+            <input type="datetime-local" name="makeupartistMeetingDate">
+          <li><label name="makeupartistDetailsDate">Wizyty probne</label>
+            <input type="datetime-local" name="makeupartistMeetingDate">
+            <input type="datetime-local" name="makeupartistMeetingDate">
+            <input type="datetime-local" name="makeupartistMeetingDate">
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
