@@ -1,0 +1,33 @@
+<%= form_for(@guest) do |f| %>
+  <% if @guest.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@guest.errors.count, "error") %> prohibited this guest from being saved:</h2>
+
+      <ul>
+      <% @guest.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :imie %><br>
+    <%= f.text_field :imie %>
+  </div>
+  <div class="field">
+    <%= f.label :nazwisko %><br>
+    <%= f.text_field :nazwisko %>
+  </div>
+  <div class="field">
+    <%= f.label :numer %><br>
+    <%= f.text_field :numer %>
+  </div>
+  <div class="field">
+    <%= f.label :osobatow %><br>
+    <%= f.text_field :osobatow %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
