@@ -1,0 +1,51 @@
+<% provide(:title, "Pan Młody") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+  </head>
+  <body>
+    <div class="row">
+      <h1>Stroj</h1>
+      <div class="col-4 col-m-4">
+        <ol class="o">
+          <h4>Salon</h4>
+          <br>
+          <li><label name="salonDetailsName">Nazwa salonu</label>
+            <input type="text" name="salonName"><br>
+          <li><label name="salonDetailsStreet">Ulica</label>
+            <input type="text" name="salonStreet"><br>
+          <li><label name="salonDetailsCity">Miasto </label>
+            <input type="text" name="salonsCity"><br>
+          <li><label name="salonDetailsTelephone">Numer telefonu </label>
+            <input type="number" name="salonTelephone"><br>
+        </ol>
+      </div>
+
+      <div class="col-4 col-m-4">
+        <ol class="o">
+          <h4>Garnitur</h4>
+          <br>
+          <li><label name="suitDetailsName">Model sukni</label>
+            <input type="text" name="suitName"><br>
+          <li><label name="suitDetailsSize">Rozmiar</label>
+            <input type="number" name="suitSize"><br>
+          <li><label name="suitDetailsDate">Przymiarki</label>
+            <input type="datetime-local" name="dressMeetingDate">
+            <input type="datetime-local" name="dressMeetingDate">
+            <input type="datetime-local" name="dressMeetingDate">
+        </ol>
+      </div>
+
+      <div class="col-4 col-m-4">
+        <ol class="o">
+          <h4>Dodatki</h4>
+          <br>
+          <input type="checkbox" name="accessories" value="Krawat">Krawat<br>
+          <input type="checkbox" name="accessories" value="Spinki do mankietow">Spinki do mankietow<br>
+          <input type="checkbox" name="accessories" value="Buty">Buty<br>
+          <input type="checkbox" name="accessories" value="Bielizna">Bielizna<br>
+
+      </div>
+  </body>
+</html>
