@@ -10,24 +10,30 @@
       </ul>
     </div>
   <% end %>
+	
 
-  <div class="field">
-    <%= f.label :imie %><br>
+  <p>
+    <%= f.label :imie, "Imie" %><br>
     <%= f.text_field :imie %>
-  </div>
-  <div class="field">
-    <%= f.label :nazwisko %><br>
+  </p>
+ 
+  <p>
+    <%= f.label :nazwisko, "Nazwisko" %><br>
     <%= f.text_field :nazwisko %>
-  </div>
-  <div class="field">
-    <%= f.label :numer %><br>
+  </p>
+  
+  <p>
+    <%= f.label :numer, "Numer" %><br>
     <%= f.text_field :numer %>
-  </div>
-  <div class="field">
-    <%= f.label :osobatow %><br>
+  </p>
+  
+  <p>
+    <%= f.label :osobatow, "Osoba towarzysząca" %><br>
     <%= f.text_field :osobatow %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  </p>
+ <br> 
+  <p>
+    <%= f.submit class: 'btn btn-info custom' %>
+ </p>
+ 
 <% end %>

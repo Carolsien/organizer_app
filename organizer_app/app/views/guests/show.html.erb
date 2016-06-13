@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<br>
+<br>
+<br>
+<br>
 <p>
   <strong>Imie:</strong>
   <%= @guest.imie %>
@@ -16,9 +19,11 @@
 </p>
 
 <p>
-  <strong>Osobatow:</strong>
+  <strong>Osoba towarzysząca:</strong>
   <%= @guest.osobatow %>
 </p>
-
-<%= link_to 'Edit', edit_guest_path(@guest) %> |
-<%= link_to 'Back', guests_path %>
+<br>
+<p style="text-indent: 6em;">
+<%= link_to 'Edytuj', edit_guest_path(@guest) %> |
+<%= link_to 'Wstecz', guests_path %>
+</p>

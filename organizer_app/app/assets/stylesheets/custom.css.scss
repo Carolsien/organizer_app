@@ -3,6 +3,14 @@
 
 /* universal */
 
+p {margin:0; padding:0 0 0 20px}
+button {width:100px; height:50px;}
+
+.custom {
+    width: 200px !important;
+	height: 50px;
+}
+
 body {
   font-family: verdana,tahoma;
   color: #3300cc;
